@@ -4,12 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <com.example.refreshview.refreshlistview.RefreshListView
+        android:visibility="gone"
         android:id="@+id/lv_refresh_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never"/>
+
+    <com.example.refreshview.refreshscrollview.RefreshScrollView
+        android:id="@+id/sc_refresh_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:gravity="center"
+            android:text="11111111111111111111111"/>
+
+    </com.example.refreshview.refreshscrollview.RefreshScrollView>
 
 </LinearLayout>

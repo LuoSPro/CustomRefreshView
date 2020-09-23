@@ -8,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -133,5 +134,4 @@ public class MyHeaderView extends LinearLayout {
     public void setHeaderTime(){
         mHeaderTime.setText("上次刷新时间    "+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(System.currentTimeMillis()));
     }
-
 }
